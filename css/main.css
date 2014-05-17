@@ -201,3 +201,7 @@ a {
 .thankyou {
   padding-bottom: 175px;
 }
+
+.navbar-toggle {
+  background-color: gray;
+}
