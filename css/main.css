@@ -83,6 +83,24 @@ nav {
     nav a:hover {
       color: #122f51; }
 
+
+.nav-small {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  font-size: 1em;
+  font-family: "EB Garamond", "lucida bright", georgia, times, serif;
+  width: 38em;
+  left: 50%;
+  margin: -7em 0 0 -19em; }
+  .nav-small a {
+    display: inline-block;
+    margin: 0 1em;
+    color: #c7374e; }
+    .nav-small a:hover {
+      color: #122f51; }
+
+
 /* Homepage */
 .hero-area {
   min-height: 580px; }
@@ -108,8 +126,6 @@ nav {
 .nav-area {
   height: 260px;
   background: rgba(255, 255, 255, 0.5); }
-  .nav-area nav {
-    margin-top: -1.75em; }
   .nav-area h1 {
     margin-top: 3.25em;
     font-size: 2.667em;
