@@ -259,3 +259,8 @@ a {
   max-height: 200px;
   max-width: auto;
 }
+
+.fullscreen-btn {
+  background-color: #8bb6a3;
+  color: white;
+}
