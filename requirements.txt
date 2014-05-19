@@ -1,0 +1,6 @@
+Jinja2==2.7.2
+MarkupSafe==0.23
+PyYAML==3.11
+binaryornot==0.3.0
+complexity==0.9.1
+wsgiref==0.1.2

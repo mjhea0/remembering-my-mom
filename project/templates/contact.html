@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<div class="container whitebg">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3 w">
+      <h2 class="centered">Contact</h2>
+        <p>We will be adding photos, messages and memories to this site - if you would like to share something, please send us an email using the form below:</p>
+        <script>
+            // check all fields
+            function CheckAll(x) {
+              if (ISBLANK(x.fieldnm_1.value)) {
+                alert("Please enter name, so we know who you are.");
+                return false;
+              }
+              if (ISBLANK(x.fieldnm_2.value)) {
+                alert("Please enter your email address, so we can reply to you.");
+                return false;
+              }
+              if (ISBLANK(x.fieldnm_3.value)) {
+                alert("You must enter a message text field.");
+                return false;
+              }
+              return true;
+            }
+
+            // check email
+
+            function checkemail(myemail) {
+              var str = myemail;
+              var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+              if (filter.test(str)) {
+                testresults = true
+              } else {
+                testresults=false
+              }
+              return (testresults)
+            }
+
+            // check that a value is EMPTY OR NOT
+            function ISBLANK(xx) {
+              var cc = 0,tt;
+              for(tt = 0; tt<xx.length; tt++) {
+                if (xx.charAt(tt) == ' ') {
+                  cc = cc + 1; // count blank character
+                }
+              }
+              if (cc == xx.length) {
+                return true;  // is BLANK
+              }
+              return false;  // is NOT BLANK
+            }
+
+            function is_radio_button_selected(fieldnm) {
+              // set radio_choice to false
+              var radio_choice = false;
+
+              // Loop from zero to the one minus the number of radio button selections
+              for (counter = 0; counter < fieldnm.length; counter++) {
+                // If a radio button has been selected it will return true
+                // (If not it will return false)
+                if (fieldnm[counter].checked)
+                  radio_choice = true;
+              }
+              if (!radio_choice) {
+                return (false); // not selected
+              }
+              return (true); // means selected
+          }
+        </script>
+
+        <form name="form1" method="POST" action="/_contactemailer.php" onSubmit="return CheckAll(this);">
+          <span class="myError"></span>
+          <div class="formline">
+            <label for="fieldnm_1" class="hide">Your Name:</label>
+            <input name="fieldnm_1" id="fieldnm_1" type="name" class="text-input" placeholder="Your name" title="Your name" autofocus />
+          </div>
+          <div class="formline">
+            <label for="fieldnm_2" class="hide">Your Email:</label>
+            <input name="fieldnm_2" id="fieldnm_2" title="Your email" type="email" placeholder="Your email address" class="text-input" />
+          </div>
+          <div class="formline">
+            <label for="fieldnm_3">Message:</label>
+            <textarea name="fieldnm_3" id="fieldnm_3" cols="55" rows="8"></textarea>
+          </div>
+          <div class="formline btn-row">
+            <input type="submit" name="Submit" value="Submit" class="btn btn-norm">
+            <input type="reset" name="Submit2" value="Reset"  class="btn btn-reset">
+          </div>
+        </form>
+
+      </div>
+  </div>
+</div>
+
+{% endblock %}
+
