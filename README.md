@@ -6,5 +6,5 @@
   $ complexity project/
   ```
 
-1. build with html, css, js, and [complexity](http://complexity.readthedocs.org/en/latest/)
+1. built with html, css, js, and [complexity](http://complexity.readthedocs.org/en/latest/)
 
