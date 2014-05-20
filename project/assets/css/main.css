@@ -267,4 +267,11 @@ a {
 
 #play {
   display:none;
+  background-color: #b68b9e;
+  color: white;
+}
+
+#pause {
+  background-color: #b68b9e;
+  color: white;
 }
