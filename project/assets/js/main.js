@@ -27,11 +27,15 @@ $(function() {
   $('#play').click(function() {
     audioElement.play();
     audioElement.loop=true;
+    $('#pause').show()
+    $('#play').hide()
   });
 
 
   $('#pause').click(function() {
     audioElement.pause();
+    $('#pause').hide()
+    $('#play').show()
   });
 
 });

@@ -264,3 +264,7 @@ a {
   background-color: #8bb6a3;
   color: white;
 }
+
+#play {
+  display:none;
+}
