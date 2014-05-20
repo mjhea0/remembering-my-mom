@@ -15,9 +15,13 @@ $(function() {
   //audioElement.load()
   $.get();
   audioElement.addEventListener("load", function() {
-  audioElement.play();
-  audioElement.loop=true;
+    audioElement.play();
+    audioElement.loop=true;
   }, true);
+  audioElement.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+  }, false);
 
 
   $('#play').click(function() {
