@@ -37,6 +37,10 @@ p {
   text-align: center; 
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* Links */
 a {
   color: #17a7a8;
