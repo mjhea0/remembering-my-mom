@@ -16,15 +16,17 @@ $(function() {
   $.get();
   audioElement.addEventListener("load", function() {
   audioElement.play();
+  audioElement.loop=true;
   }, true);
 
 
-  $('.play').click(function() {
+  $('#play').click(function() {
     audioElement.play();
+    audioElement.loop=true;
   });
 
 
-  $('.pause').click(function() {
+  $('#pause').click(function() {
     audioElement.pause();
   });
 
