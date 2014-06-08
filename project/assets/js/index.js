@@ -17,7 +17,6 @@ $(function() {
 
   $('.play-icon').click(function() {
     audioElement.play();
-    audioElement.loop=true;
   });
 
 });
