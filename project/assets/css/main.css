@@ -279,3 +279,13 @@ a {
   background-color: #8bb4b6;
   color: white;
 }
+
+#img-announcement {
+  max-width: 200px;
+  max-height: auto;
+}
+
+.play-btn {
+  background-color: #8bb4b6;
+  color: white;
+}
